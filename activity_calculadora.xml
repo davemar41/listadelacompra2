@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Calculadora">
+
+    <TextView
+        android:id="@+id/Cuantogasto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="152dp"
+        android:layout_marginRight="152dp"
+        android:text="@string/cuanto"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.406"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="214dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginRight="48dp"
+        android:background="@drawable/stilo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Cuantogasto" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal"
+        android:layout_width="94dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="167dp"
+        android:layout_marginRight="167dp"
+        android:layout_marginBottom="36dp"
+        android:background="@drawable/stilo"
+        android:ems="10"
+        android:inputType="numberSigned|numberDecimal"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/producto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:text="@string/producto"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/precio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="43dp"
+        android:layout_marginLeft="43dp"
+        android:layout_marginTop="64dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:textColor="@color/black"
+        android:text="@string/precio"
+        app:layout_constraintEnd_toStartOf="@+id/editTextNumberDecimal"
+        app:layout_constraintHorizontal_bias="0.166"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/producto" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine2"
+        android:layout_width="281dp"
+        android:layout_height="223dp"
+        android:layout_marginStart="79dp"
+        android:layout_marginLeft="79dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="51dp"
+        android:layout_marginRight="51dp"
+        android:layout_marginBottom="53dp"
+        android:background="@drawable/stilo"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal" />
+
+    <EditText
+        android:id="@+id/editTextNumberDecimal2"
+        android:layout_width="98dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="68dp"
+        android:layout_marginLeft="68dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="35dp"
+        android:layout_marginRight="35dp"
+        android:background="@drawable/stilo"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/total"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2" />
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginLeft="52dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginBottom="235dp"
+        android:textColor="@color/black"
+        android:text="@string/Total"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine2"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenu2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="111dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="42dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextNumberDecimal2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/agrego"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_baseline_cancel_24"/>
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/quito"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_baseline_add_24"
+            />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

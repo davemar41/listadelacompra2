@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/compra"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/botonredondeado"
+        android:text="@string/compra"
+        app:backgroundTint="#EF6C00"
+        app:layout_constraintBottom_toTopOf="@+id/calculadora"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horario" />
+
+    <Button
+        android:id="@+id/calculadora"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="86dp"
+        android:background="@drawable/botonredondeado"
+        android:text="@string/calculadora"
+        app:backgroundTint="#EF6C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/compra" />
+
+    <Button
+        android:id="@+id/establecimientos"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/botonredondeado"
+        android:text="@string/establecimientos"
+        app:backgroundTint="#EF6C00"
+        app:layout_constraintBottom_toTopOf="@+id/horario"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+    <Button
+        android:id="@+id/horario"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="110dp"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="111dp"
+        android:layout_marginRight="111dp"
+        android:layout_marginBottom="2dp"
+        android:background="@drawable/botonredondeado"
+        android:text="@string/horario"
+        app:backgroundTint="#EF6C00"
+        app:layout_constraintBottom_toTopOf="@+id/compra"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/establecimientos" />
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="238dp"
+        android:layout_height="339dp"
+        android:layout_marginStart="86dp"
+        android:layout_marginLeft="86dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="87dp"
+        android:layout_marginRight="87dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/persona" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

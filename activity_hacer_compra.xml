@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FCFDFD"
+    tools:context=".HacerCompra">
+
+    <com.getbase.floatingactionbutton.FloatingActionsMenu
+        android:id="@+id/floatingActionsMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="312dp"
+        android:layout_marginLeft="312dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="32dp"
+        android:colorAccent="#EF6C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/agregarproducto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_baseline_add_24"
+            app:layout_constraintBottom_toBottomOf="@+id/floatingActionsMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.857"
+
+            />
+
+        <com.getbase.floatingactionbutton.FloatingActionButton
+            android:id="@+id/check"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:fab_icon="@drawable/ic_baseline_check_24"
+            app:layout_constraintBottom_toBottomOf="@+id/floatingActionsMenu"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.925"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.857"
+
+            />
+    </com.getbase.floatingactionbutton.FloatingActionsMenu>
+
+    <EditText
+        android:id="@+id/editor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:background="@drawable/stilo"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.088"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/editTextTextMultiLine"
+        android:layout_width="257dp"
+        android:layout_height="295dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginLeft="37dp"
+        android:layout_marginTop="54dp"
+        android:layout_marginEnd="117dp"
+        android:layout_marginRight="117dp"
+        android:background="@drawable/stilo"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editor" />
+
+    <Button
+        android:id="@+id/borrar"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="39dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/botonredondeado"
+        android:text="@string/borrar"
+        app:backgroundTint="#EF6C00"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionsMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+
+    <Button
+        android:id="@+id/volver"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:background="@drawable/botonredondeado"
+        android:text="@string/volver"
+        app:backgroundTint="#EF6C00"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionsMenu"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/borrar" />
+
+    <Button
+        android:id="@+id/desconocido"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="190dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="47dp"
+        android:layout_marginLeft="47dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="75dp"
+        android:layout_marginRight="75dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/botonredondeado"
+        android:text="Button"
+        app:backgroundTint="#EF6C00"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/floatingActionsMenu"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volver"
+        app:layout_constraintVertical_bias="0.01" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

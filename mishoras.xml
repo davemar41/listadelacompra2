@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/firstfragment"
+        android:title="9:00-10:30"/>
+    <item
+        android:id="@+id/secondfragment"
+        android:title="10:30-12:30"/>
+    <item
+        android:id="@+id/thirdfragment"
+        android:title="12:30-14:30"/>
+    <item
+        android:id="@+id/fourthfragment"
+        android:title="14:30-17:30"/>
+    <item
+        android:id="@+id/fithfragment"
+        android:title="17:30-20:00"/>
+    <item
+        android:id="@+id/sixfragment"
+        android:title="20:00-22:00"/>
+
+</menu>
